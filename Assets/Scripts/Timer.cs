@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
     {
         if (PlanetCounter != null)
         {
-            victory = PlanetCounter[0].GetComponent<PlanetCounter>().winner;
+            victory = PlanetCounter[0].GetComponent<PlanetCounter>().victory;
         }
         //-------------------------------------------------------------  visszaszámláló
         if (timeValue > 0 && !victory)

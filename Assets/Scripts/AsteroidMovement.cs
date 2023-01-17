@@ -18,14 +18,14 @@ public class AsteroidMovement : MonoBehaviour
     [SerializeField] public bool inGravity;   //gravitációs kútban van-e?
     float gravityForce = 1f;
     Vector3 sumOfPosition = new Vector3(0, 0, 0);
-    PlanetCounter[] PlanetCounter;
+    PlanetCounter PlanetCounter;
 
 
 
     private void OnValidate()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        PlanetCounter = FindObjectsOfType<PlanetCounter>(); 
+        PlanetCounter = FindObjectOfType<PlanetCounter>(); 
         
     }
 
@@ -41,7 +41,7 @@ public class AsteroidMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(PlanetCounter != null && PlanetCounter[0].GetComponent<PlanetCounter>().winner == true)
+        if(PlanetCounter != null && PlanetCounter.GetComponent<PlanetCounter>().victory == true)
         {
             transform.position = transform.position;
             rigidbody.Sleep();

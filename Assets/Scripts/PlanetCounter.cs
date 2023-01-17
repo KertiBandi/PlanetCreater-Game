@@ -19,7 +19,7 @@ public class PlanetCounter : MonoBehaviour
     [SerializeField] TMP_Text thirdText;
     [SerializeField] GameObject ObjectToTurnOnWhenWin;
     [SerializeField] int winningCondition;
-    [SerializeField] public bool winner;
+    [SerializeField] public bool victory;
 
     private void Start()
     {
@@ -66,17 +66,17 @@ public class PlanetCounter : MonoBehaviour
         if (asteroidCountList.Count > 0)
         {
             first = asteroidCountList[asteroidCountList.Count - 1];
-            firstText.text = "1st Planet size: " + first;
+            firstText.text = "1st Planet: " + first;
         }
         if (asteroidCountList.Count > 1)
         {
             second = asteroidCountList[asteroidCountList.Count - 2];
-            secondText.text = "2nd Planet Size: " + second;
+            secondText.text = "2nd Planet: " + second;
         }
         if (asteroidCountList.Count > 2)
         {
             third = asteroidCountList[asteroidCountList.Count - 3];
-            thirdText.text = "3rd Planet Size: " + third;
+            thirdText.text = "3rd Planet: " + third;
         }
 
         if (asteroidCountList.Count < 1)
@@ -99,7 +99,7 @@ public class PlanetCounter : MonoBehaviour
         if (first >= winningCondition)
         {
             ObjectToTurnOnWhenWin.SetActive(true);
-            winner = true;
+            victory = true;
         }
 
 

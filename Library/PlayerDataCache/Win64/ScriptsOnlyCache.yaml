@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
@@ -83,6 +84,12 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: GameManager
+    methodName: Quitegame
+  - assembly: Assembly-CSharp
+    fullTypeName: GameManager
+    methodName: UnPauseGame
   - assembly: Assembly-CSharp
     fullTypeName: GameManager
     methodName: RestartGame
@@ -788,7 +795,7 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 85af3b23ff607c2686781d35be7557db
+      Hash: 344217826bd95dbdb0f0cf1f2e776dec
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlanetCounter
@@ -986,7 +993,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: d91fcd9ac7bd86d3d771dd6171620fad
+      Hash: 6b1138910f547a1d553bb514c6247a3a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager

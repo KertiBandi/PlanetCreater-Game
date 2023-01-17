@@ -7,7 +7,8 @@ public class CameraMovment : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] float panBorderThickness = 10f;
-
+    float zoom = 2f;
+    float scrollSpeed = 10f;
     Camera camera1;
 
 
@@ -66,7 +67,11 @@ public class CameraMovment : MonoBehaviour
         {
             pos.x = transform.position.x + 1;
         }
-
+        //--------------------------------------------------------------- zoom-olás
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        zoom -= scroll;
+        camera1.orthographicSize = zoom * scrollSpeed;
+        camera1.orthographicSize = Mathf.Clamp(camera1.orthographicSize, 10, 40) ;
 
         //-----------------------------------------------------------------------------
 

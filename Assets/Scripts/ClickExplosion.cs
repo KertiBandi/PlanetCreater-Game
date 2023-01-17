@@ -13,24 +13,27 @@ public class ClickExplosion : MonoBehaviour
     [SerializeField] public int ammo;
     [SerializeField] TMP_Text ammoText;
     public bool dead = false;
-    PlanetCounter[] planetCounter;
+    PlanetCounter planetCounter;
+    GameManager gameManager;
 
     private void OnValidate()
     {
-        planetCounter = FindObjectsOfType<PlanetCounter>();
+        planetCounter = FindObjectOfType<PlanetCounter>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     private void Update()
     {
 
         bool click = Input.GetMouseButtonDown(0);
-        bool victory = planetCounter[0].GetComponent<PlanetCounter>().winner;
+        bool victory1 = planetCounter.GetComponent<PlanetCounter>().victory;
+        bool isPaused1 = gameManager.GetComponent<GameManager>().isPaused;
+        ammoText.text = "Ammo: " + ammo;
 
-
-        if (click && ammo > 0 && planetCounter != null && !victory)
+        if (click && ammo > 0 && !victory1 && !isPaused1)
         {
             ammo--;
-            ammoText.text = "Ammo: " + ammo;
+         
 
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, explosionRange, layerToHit);
