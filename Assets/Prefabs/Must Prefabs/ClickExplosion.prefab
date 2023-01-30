@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &831312431112623169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 831312431112623167}
+  - component: {fileID: 831312431112623166}
+  m_Layer: 0
+  m_Name: ClickExplosion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &831312431112623167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831312431112623169}
+  m_LocalRotation: {x: -0, y: -0, z: -0.002013255, w: 0.999998}
+  m_LocalPosition: {x: 5.76, y: 16.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &831312431112623166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831312431112623169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3ea371619b09840ad388b8f25d6241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effect: {fileID: 831312431112623167}
+  explosionForce: 50
+  explosionRange: 7
+  layerToHit:
+    serializedVersion: 2
+    m_Bits: 64
+  ammo: 20
+  ammoText: {fileID: 0}
+  planetCounter: {fileID: 0}
+  gameManager: {fileID: 0}
+  bombType: 0
+  explosionGameObject: {fileID: 8329998069229382117, guid: 79de044041fde2a4ebae0a23d669a008, type: 3}
+  implosionGameObject: {fileID: 1116820877612578061, guid: 8b40b6ac30f665e42b4b9c59bbb212ad, type: 3}
+  stopGameObject: {fileID: 3112067506415738848, guid: f7d5318d32a8ad245a1229bd8980c569, type: 3}

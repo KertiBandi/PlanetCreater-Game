@@ -123,4 +123,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   numberOfAsteroids: 0
+  accelaration: 100
+  maxSpeed: 2
   objects: []
+  PlanetCounter: {fileID: 0}

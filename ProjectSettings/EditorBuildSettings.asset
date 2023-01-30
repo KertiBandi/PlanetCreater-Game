@@ -6,6 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 3561e2daab82d3a4faaa6005ccbaa166
+  - enabled: 1
     path: Assets/Scenes/AsteroidGame_1.unity
+    guid: 7982ce4353df09e479ace7970739ae09
+  - enabled: 1
+    path: Assets/Scenes/AsteroidGame_2.unity
+    guid: 17f9382ec42a6d44cb56fbc37a23a054
+  - enabled: 1
+    path: Assets/Scenes/AsteroidGame_3.unity
+    guid: 5c435bb11ca13994683d5d2cdc99e56d
+  - enabled: 1
+    path: Assets/Scenes/AsteroidGame_4.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/AsteroidGame_5.unity
+    guid: c586bad1ea8442243a17adaff698e598
+  - enabled: 1
+    path: Assets/Scenes/AsteroidGame_6.unity
+    guid: 1b5068cca749afd4ea3eef8701531f7b
+  - enabled: 1
+    path: Assets/Scenes/AsteroidGame_7.unity
+    guid: 402a6e41b50bd9948a9229dc5f2adba9
+  - enabled: 1
+    path: Assets/Scenes/AsteroidGame_8.unity
+    guid: ccffcc841ece749499f72ef038a59003
+  - enabled: 1
+    path: Assets/Scenes/AsteroidGame_9.unity
+    guid: b3924b4e7bab84b4a9119c145bee2125
+  - enabled: 1
+    path: Assets/Scenes/AsteroidGame_10.unity
+    guid: 4da8d86048f89c048abe683112d95821
   m_configObjects: {}

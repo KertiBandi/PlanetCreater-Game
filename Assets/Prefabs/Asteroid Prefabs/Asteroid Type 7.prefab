@@ -82,7 +82,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.75, y: 2.41}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -110,8 +110,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   newPlanetCenter: {fileID: 7308651805901796892, guid: 8aa87bfc27c2f6747900784085c8735f, type: 3}
+  gravityMultiplier: {fileID: 0}
   objects: []
+  edge: {fileID: 0}
   inGravity: 0
+  PlanetCounter: {fileID: 0}
+  mass: 0
 --- !u!114 &2268209336580370716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +170,7 @@ PolygonCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 2.75, y: 2.41}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 2.75, y: 2.41}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
